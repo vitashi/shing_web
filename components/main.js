@@ -15,10 +15,8 @@ class Layout extends React.Component{
 		return(
 		       <MuiThemeProvider>
 		       <div>
-		       <LeftNav/>
-		       <Content/>
-
-        
+			       <LeftNav/>
+			       <Content/>
 		        </div>
 			  </MuiThemeProvider>
 		       );
