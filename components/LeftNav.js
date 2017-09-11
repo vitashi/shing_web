@@ -17,6 +17,11 @@ var injectTapEventPlugin = require("react-tap-event-plugin");
 injectTapEventPlugin();
 
 
+var styles = {
+  logo : { width: 80, height: 50, marginLeft: 40}
+}
+
+
 // id="sidebar-wrapper"
 export default class LeftNav extends React.Component{
 
@@ -27,14 +32,14 @@ export default class LeftNav extends React.Component{
 
 	render(){
 		return (
-		        <div id="sidebar-wrapper" style={{fontSize: 8}}>
+		        <div id="sidebar-wrapper" style={{fontSize: 4}}>
             <div className="sidebar-nav">
                 <List>
-                <ListItem containerElement='li' className="sidebar-brand">
-                    <a href="#"> <img src="./images/logo0.png"/></a>
+                <ListItem innerDivStyle={{height: 30, fontSize: 12, marginBottom: 30}} containerElement='li' className="sidebar-brand">
+                    <a href="#"> <img style={styles.logo} src="./images/logo0.png"/></a>
                 </ListItem>
 
-                <ListItem primaryText='Shops' nestedItems={[
+                <ListItem innerDivStyle={{height: 10, fontSize: 12}} primaryText='Shops' nestedItems={[
                     <ListItem
                         primaryText="Switch to Brendan Lim"
                       />,
@@ -46,7 +51,7 @@ export default class LeftNav extends React.Component{
                       />
                     ]}/>
 
-                <ListItem primaryText='Contacts' nestedItems={[
+                <ListItem innerDivStyle={{height: 10, fontSize: 12}} primaryText='Contacts' nestedItems={[
                     <ListItem
                         primaryText="0734091540"
                         leftIcon={<CommunicationCall  />}

@@ -16,7 +16,7 @@ export default class Content extends React.Component{
             <div className="container-fluid">
                <div className='row'>
                    <div className="col-lg-6 col-md-6" >
-                        <Subheader><h1 style={{color: '#3B5998', fontWeight: 'bold'}}>Westgate Shopping Mall</h1></Subheader>
+                        <Subheader><h2 style={{color: '#3B5998', fontWeight: 'bold'}}>Westgate Shopping Mall</h2></Subheader>
                     </div>
                      <div className="col-lg-6 col-md-6" style={{listStyleType: 'none', textAlign: 'center'}}>
                         <h3 style={{color: '#3B5998', marginTop: 25, display: 'block', float: "left"}}>Contacts </h3>
