@@ -4,7 +4,7 @@ import MenuItem from 'material-ui/MenuItem';
 import DropDownMenu from 'material-ui/DropDownMenu';
 
 import Logo  from './Logo';
-import ProductSearch  from './ProductSearch';
+import ShingMenus  from './ShingMenus';
 import ShopName  from './ShopName';
 import Settings  from './Settings';
 import User  from './User';
@@ -46,7 +46,7 @@ export default class Bar extends React.Component{
       return (
               <div style={styles.appbar}>
                 <Logo />
-                <ProductSearch />
+                <ShingMenus />
                 <ShopName />
                 <Settings />
                 <User />
