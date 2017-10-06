@@ -46,8 +46,8 @@ export default class MenuShops extends React.Component{
   render = () => {
     let button = <FlatButton style={styles.menu} hoverColor={grey400} labelStyle={styles.menulabels} onClick={this.handleTouchTap} label={"shops"}/>
     let shops = [{name: "Westgate Shopping Mall", id: "0912"}, {name: "The Point", id: "87666"}];
-    let newButton = <FlatButton style={styles.newButton} hoverColor={grey400} labelStyle={styles.menulabels} href={'#/shops'} label={"Manage Shops"}/>
-    let menuitemsLinks = `/campaigns`
+    let newButton = <FlatButton style={styles.newButton} hoverColor={grey400} labelStyle={styles.menulabels} href={'#/app/shops'} label={"Manage Shops"}/>
+    let menuitemsLinks = `/app/campaigns`
     return (
       <div style={styles.menuinline}>
         {button}

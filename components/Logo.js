@@ -14,7 +14,7 @@ export default class Logo extends React.Component{
 
     render(){
       return (<span> 
-                <a href="#"> <img style={styles.logo} src="./images/logo0.png"/></a> 
+                <a href="#/app"> <img style={styles.logo} src="./images/logo0.png"/></a> 
               </span>
               );
   

@@ -74,7 +74,7 @@ export default class ManageCampaigns extends React.Component{
     let rows = campaigns.map((campaign)=>{
       return (
               <TableRow selected={this.isSelected(0)}>
-                <TableRowColumn><Link to="/shopdetails">{campaign.name}</Link></TableRowColumn>
+                <TableRowColumn><Link to="/app/shopdetails">{campaign.name}</Link></TableRowColumn>
                 <TableRowColumn>{campaign.notes}</TableRowColumn>
                 <TableRowColumn>{"hello"}</TableRowColumn>
                 <TableRowColumn>{campaign.notes}</TableRowColumn>

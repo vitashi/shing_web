@@ -51,7 +51,7 @@ export default class MenuCampaigns extends React.Component{
     let button = <FlatButton style={styles.menu} hoverColor={grey400} labelStyle={styles.menulabels} onClick={this.handleTouchTap} label={"campaigns"}/>
     let campaigns = [{name: "Rush Hour", id: "0912"}, {name: "Dresses", id: "87666"}];
     let newButton = <FlatButton style={styles.newButton} hoverColor={grey400} labelStyle={styles.menulabels} onClick={this.createCampaign} label={"Manage Campaigns"}/>
-    let menuitemsLinks = `/shopdetails`
+    let menuitemsLinks = `/app/shopdetails`
     return (
       <div style={styles.menuinline}>
         {button}

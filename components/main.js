@@ -12,7 +12,11 @@ import ShopDetails  from './ShopDetails';
 import ManageShops  from './ManageShops';
 import ManageCampaigns  from './ManageCampaigns';
 
-class Layout extends React.Component{
+import PublicBar  from './PublicBar';
+import Home  from './Home';
+
+
+class Private extends React.Component{
 		           // <Footer/>
 	render(){
 		return(<MuiThemeProvider>
@@ -24,14 +28,33 @@ class Layout extends React.Component{
 		       )
 	}
 }
+
+class Public extends React.Component{
+               // <Footer/>
+  render(){
+    return(<MuiThemeProvider>
+             <div style={{backgroundColor: grey100, left: 0, top: 0, margin: 0, padding: 0}}>
+               <PublicBar/>
+               {this.props.children}
+             </div>
+           </MuiThemeProvider>
+           )
+  }
+}
+
+
+
 const app = document.getElementById('wrapper');
 ReactDOM.render(
                 <Router history={hashHistory}>
-                  <Route path="/" component={Layout}>
+                  <Route path="/" component={Public}>
+                    <IndexRoute component={Home}></IndexRoute>
+                  </Route>
+                  <Route path="/app" component={Private}>
                     <IndexRoute component={ManageShops}></IndexRoute>
-	                  <Route path="products" component={ManageProducts}></Route>
-	                  <Route path="shops" component={ManageShops}></Route>
-	                  <Route path="campaigns" component={ManageCampaigns}></Route>
-	                  <Route path="ShopDetails" component={ShopDetails}></Route>
+                    <Route path="products" component={ManageProducts}></Route>
+                    <Route path="shops" component={ManageShops}></Route>
+                    <Route path="campaigns" component={ManageCampaigns}></Route>
+                    <Route path="ShopDetails" component={ShopDetails}></Route>
                   </Route>
                 </Router>, app);

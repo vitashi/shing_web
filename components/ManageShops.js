@@ -79,7 +79,7 @@ export default class ManageShops extends React.Component{
     let rows = shops.map((shop)=>{
       return (
               <TableRow selected={this.isSelected(0)}>
-                <TableRowColumn><Link to="/campaigns">{shop.name}</Link></TableRowColumn>
+                <TableRowColumn><Link to="/app/campaigns">{shop.name}</Link></TableRowColumn>
                 <TableRowColumn>{shop.desc}</TableRowColumn>
                 <TableRowColumn>{shop.phone}</TableRowColumn>
                 <TableRowColumn>{shop.location}</TableRowColumn>

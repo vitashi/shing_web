@@ -20,8 +20,7 @@ export default class MenuProducts extends React.Component{
     }
 
   go_to_products(){
-    console.log('Heheheheheheh')
-    window.location=`#/products`
+    window.location=`#/app/products`
   }
 
   render = () => {
